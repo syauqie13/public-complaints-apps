@@ -63,3 +63,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/laporan', Laporan::class)->name('laporan');
+
+Route::get('/auth/start-session', Login::class)->name('login');

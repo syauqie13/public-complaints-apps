@@ -9,6 +9,10 @@ class Home extends Component
 {
     public $totalLaporan;
 
+    // protected $listeners = [
+    //     ''
+    // ]
+
     public function mount()
     {
         $this->totalLaporan = Laporan::count();

@@ -10,9 +10,11 @@
     <link rel="shortcut icon" href="{{ asset('image/cs.png') }}" type="image/x-icon">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset('mazer/assets/extensions/simple-datatables/style.css') }}">
     <link rel="stylesheet" href="{{ asset('mazer/assets/compiled/css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('mazer/assets/compiled/css/app-dark.css') }}">
     <link rel="stylesheet" href="{{ asset('mazer/assets/compiled/css/iconly.css') }}">
+    <link rel="stylesheet" href="{{ asset('mazer/assets/compiled/css/table-datatable.css') }}">
     @yield('css')
 </head>
 
@@ -32,7 +34,7 @@
                     </a>
                 </header>
 
-                <!-- Page Heading -->
+                <!-- Page Content -->
                 {{ $slot }}
 
             </div>
@@ -51,6 +53,10 @@
     <!-- Apexcharts -->
     <script src="{{ asset('mazer/assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
     <script src="{{ asset('mazer/assets/static/js/pages/dashboard.js') }}"></script>
+
+    <!-- data tables -->
+    <script src="{{asset('mazer/assets/extensions/simple-datatables/umd/simple-datatables.js')}}"></script>
+    <script src="{{ asset('mazer/assets/static/js/pages/simple-datatables.js') }}"></script>
 
 </body>
 
